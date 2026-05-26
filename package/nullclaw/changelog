@@ -1,0 +1,8 @@
+支持的功能
+
+- 局域网浏览器聊天页面：`/chat`
+- 爱快页面配置模型提供商、模型地址、API Key 和接口模式
+- 第三方接入路径保留：`/lark`、`/telegram`、`/slack/events`、`/webhook`
+- Nginx 根页面与健康检查：`/`、`/health`
+- 受信任内网模型地址代理
+- 同步聊天桥：`/api/chat`

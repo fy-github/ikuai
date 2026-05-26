@@ -1,0 +1,17 @@
+{
+  "name": "nullclaw",
+  "version": "1.0.0",
+  "display_name": "Nullclaw",
+  "image": "ghcr.io/nullclaw/nullclaw:v2026.5.4",
+  "description": "Nullclaw 爱快插件，支持通过页面配置模型提供商、模型地址和 API Key，提供局域网聊天页面，并保留飞书、Telegram、Slack 等第三方接入能力。",
+  "type": "1",
+  "maintainer": "lifangy",
+  "maintainer_url": "https://github.com/nullclaw",
+  "distributor": "lifangy",
+  "distributor_url": "https://github.com/nullclaw/nullclaw",
+  "requirements": {
+    "memory": "256MB",
+    "storage": "0KB",
+    "os_min_version": "4.0.0"
+  }
+}

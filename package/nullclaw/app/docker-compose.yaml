@@ -1,0 +1,78 @@
+name: nullclaw-${NAME_NONCE}
+
+services:
+  frontend:
+    image: nginx:1.27.5-alpine
+    container_name: nullclaw-web-${NAME_NONCE}
+    restart: ${RESTART}
+    ports:
+      - ${HOST_IP}:${APP_PORT_WEB}:8080/tcp
+    volumes:
+      - ./config/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./config/chat.html:/usr/share/nginx/html/chat.html:ro
+    networks:
+      - doc_app_default
+    depends_on:
+      - nullclaw
+    labels:
+      createdBy: "Nullclaw"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8080/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  nullclaw:
+    image: ghcr.io/nullclaw/nullclaw:v2026.5.4
+    container_name: nullclaw-${NAME_NONCE}
+    user: "0:0"
+    deploy:
+      resources:
+        limits:
+          cpus: ${CPUS_LIMIT}
+          memory: ${MEMORY_LIMIT}
+    restart: ${RESTART}
+    volumes:
+      - ./data/nullclaw-data:/nullclaw-data
+      - ./config/chat-bridge.sh:/usr/local/bin/chat-bridge.sh:ro
+      - ./config/configure-and-start.sh:/usr/local/bin/configure-and-start.sh:ro
+    env_file:
+      - ./environment
+    depends_on:
+      - model-proxy
+    entrypoint:
+      - /bin/sh
+    networks:
+      - doc_app_default
+    command:
+      - /usr/local/bin/configure-and-start.sh
+    labels:
+      createdBy: "Nullclaw"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  model-proxy:
+    image: nginx:1.27.5-alpine
+    container_name: nullclaw-model-proxy-${NAME_NONCE}
+    restart: ${RESTART}
+    env_file:
+      - ./environment
+    volumes:
+      - ./config/model-proxy.conf.template:/etc/nginx/templates/default.conf.template:ro
+    networks:
+      - doc_app_default
+    labels:
+      createdBy: "Nullclaw"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8081/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+networks:
+  doc_app_default:
+    external: true
+    name: doc_app_default

@@ -1,0 +1,1170 @@
+[
+    {
+        "default":  23000,
+        "min":  1,
+        "max":  65535,
+        "attrname":  "APP_PORT_WEB",
+        "label":  {
+                      "en":  "Web port",
+                      "zh":  "Web 访问端口"
+                  },
+        "required":  true,
+        "scope":  "config",
+        "type":  "integer"
+    },
+    {
+        "default":  "openrouter",
+        "attrname":  "NULLCLAW_PROVIDER",
+        "label":  {
+                      "en":  "Model provider",
+                      "zh":  "模型提供商"
+                  },
+        "required":  true,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "openrouter/anthropic/claude-sonnet-4",
+        "attrname":  "NULLCLAW_MODEL",
+        "label":  {
+                      "en":  "Default model",
+                      "zh":  "默认模型"
+                  },
+        "required":  true,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_PROVIDER_BASE_URL",
+        "label":  {
+                      "en":  "Provider base URL",
+                      "zh":  "模型接口 Base URL"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_PROVIDER_API_KEY",
+        "label":  {
+                      "en":  "Provider API key",
+                      "zh":  "模型接口 API Key"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "responses",
+        "attrname":  "NULLCLAW_PROVIDER_API_MODE",
+        "label":  {
+                      "en":  "Provider API mode",
+                      "zh":  "模型接口模式"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "true",
+        "attrname":  "NULLCLAW_PROVIDER_NATIVE_TOOLS",
+        "label":  {
+                      "en":  "Provider native tools",
+                      "zh":  "模型原生工具调用"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "0.7",
+        "attrname":  "NULLCLAW_TEMPERATURE",
+        "label":  {
+                      "en":  "Temperature",
+                      "zh":  "模型温度"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "OPENROUTER_API_KEY",
+        "label":  {
+                      "en":  "OpenRouter API key",
+                      "zh":  "OpenRouter API Key"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "OPENAI_API_KEY",
+        "label":  {
+                      "en":  "OpenAI API key",
+                      "zh":  "OpenAI API Key"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "OPENAI_BASE_URL",
+        "label":  {
+                      "en":  "OpenAI compatible base URL",
+                      "zh":  "OpenAI 兼容接口地址"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "false",
+        "attrname":  "NULLCLAW_GATEWAY_REQUIRE_PAIRING",
+        "label":  {
+                      "en":  "Require gateway pairing",
+                      "zh":  "网关需要配对"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_GATEWAY_TOKENS",
+        "label":  {
+                      "en":  "Gateway bearer tokens",
+                      "zh":  "网关访问令牌"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WEBHOOK_SECRET",
+        "label":  {
+                      "en":  "Generic webhook secret",
+                      "zh":  "通用 Webhook 密钥"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "false",
+        "attrname":  "NULLCLAW_CRON_ENABLED",
+        "label":  {
+                      "en":  "Enable cron API",
+                      "zh":  "启用定时任务接口"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "false",
+        "attrname":  "NULLCLAW_A2A_ENABLED",
+        "label":  {
+                      "en":  "Enable A2A",
+                      "zh":  "启用 A2A"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_A2A_URL",
+        "label":  {
+                      "en":  "A2A public URL",
+                      "zh":  "A2A 公网地址"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_TELEGRAM_BOT_TOKEN",
+        "label":  {
+                      "en":  "Telegram bot token",
+                      "zh":  "Telegram Bot Token"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_TELEGRAM_ALLOW_FROM",
+        "label":  {
+                      "en":  "Telegram allow users",
+                      "zh":  "Telegram 允许用户"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WHATSAPP_ACCESS_TOKEN",
+        "label":  {
+                      "en":  "WhatsApp access token",
+                      "zh":  "WhatsApp 访问令牌"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WHATSAPP_PHONE_NUMBER_ID",
+        "label":  {
+                      "en":  "WhatsApp phone number ID",
+                      "zh":  "WhatsApp 号码 ID"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WHATSAPP_VERIFY_TOKEN",
+        "label":  {
+                      "en":  "WhatsApp verify token",
+                      "zh":  "WhatsApp 验证令牌"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WHATSAPP_WEB_BRIDGE_URL",
+        "label":  {
+                      "en":  "WhatsApp Web bridge URL",
+                      "zh":  "WhatsApp Web 桥接地址"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WHATSAPP_WEB_PLUGIN_TOKEN",
+        "label":  {
+                      "en":  "WhatsApp Web plugin token",
+                      "zh":  "WhatsApp Web 插件令牌"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_SLACK_BOT_TOKEN",
+        "label":  {
+                      "en":  "Slack bot token",
+                      "zh":  "Slack Bot Token"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_SLACK_SIGNING_SECRET",
+        "label":  {
+                      "en":  "Slack signing secret",
+                      "zh":  "Slack 签名密钥"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_LARK_APP_ID",
+        "label":  {
+                      "en":  "Lark app ID",
+                      "zh":  "飞书/Lark App ID"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_LARK_APP_SECRET",
+        "label":  {
+                      "en":  "Lark app secret",
+                      "zh":  "飞书/Lark App Secret"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WECHAT_CALLBACK_TOKEN",
+        "label":  {
+                      "en":  "WeChat callback token",
+                      "zh":  "微信公众号回调 Token"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WECOM_WEBHOOK_URL",
+        "label":  {
+                      "en":  "WeCom webhook URL",
+                      "zh":  "企业微信 Webhook 地址"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_LINE_ACCESS_TOKEN",
+        "label":  {
+                      "en":  "Line access token",
+                      "zh":  "Line 访问令牌"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_LINE_CHANNEL_SECRET",
+        "label":  {
+                      "en":  "Line channel secret",
+                      "zh":  "Line Channel Secret"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_QQ_BOT_TOKEN",
+        "label":  {
+                      "en":  "QQ bot token",
+                      "zh":  "QQ Bot Token"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_TEAMS_CLIENT_ID",
+        "label":  {
+                      "en":  "Teams client ID",
+                      "zh":  "Teams Client ID"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_TEAMS_CLIENT_SECRET",
+        "label":  {
+                      "en":  "Teams client secret",
+                      "zh":  "Teams Client Secret"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WEB_AUTH_TOKEN",
+        "label":  {
+                      "en":  "WebSocket auth token",
+                      "zh":  "WebSocket 访问令牌"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "false",
+        "attrname":  "NULLCLAW_HTTP_REQUEST_ENABLED",
+        "label":  {
+                      "en":  "Enable HTTP request tool",
+                      "zh":  "启用 HTTP 请求工具"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_SEARCH_BASE_URL",
+        "label":  {
+                      "en":  "Search base URL",
+                      "zh":  "搜索服务地址"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_HTTP_ALLOWED_DOMAINS",
+        "label":  {
+                      "en":  "Allowed HTTP domains",
+                      "zh":  "允许访问域名"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "AZURE_OPENAI_API_KEY",
+        "label":  {
+                      "en":  "AZURE_OPENAI_API_KEY",
+                      "zh":  "AZURE_OPENAI_API_KEY"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "AZURE_OPENAI_BASE_URL",
+        "label":  {
+                      "en":  "AZURE_OPENAI_BASE_URL",
+                      "zh":  "AZURE_OPENAI_BASE_URL"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "AI assistant",
+        "attrname":  "NULLCLAW_A2A_DESCRIPTION",
+        "label":  {
+                      "en":  "NULLCLAW_A2A_DESCRIPTION",
+                      "zh":  "NULLCLAW_A2A_DESCRIPTION"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "NullClaw",
+        "attrname":  "NULLCLAW_A2A_NAME",
+        "label":  {
+                      "en":  "NULLCLAW_A2A_NAME",
+                      "zh":  "NULLCLAW_A2A_NAME"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "1.0.0",
+        "attrname":  "NULLCLAW_A2A_VERSION",
+        "label":  {
+                      "en":  "NULLCLAW_A2A_VERSION",
+                      "zh":  "NULLCLAW_A2A_VERSION"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "30",
+        "attrname":  "NULLCLAW_CRON_INTERVAL_MINUTES",
+        "label":  {
+                      "en":  "NULLCLAW_CRON_INTERVAL_MINUTES",
+                      "zh":  "NULLCLAW_CRON_INTERVAL_MINUTES"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "50",
+        "attrname":  "NULLCLAW_CRON_MAX_RUN_HISTORY",
+        "label":  {
+                      "en":  "NULLCLAW_CRON_MAX_RUN_HISTORY",
+                      "zh":  "NULLCLAW_CRON_MAX_RUN_HISTORY"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "1048576",
+        "attrname":  "NULLCLAW_GATEWAY_MAX_BODY_SIZE_BYTES",
+        "label":  {
+                      "en":  "NULLCLAW_GATEWAY_MAX_BODY_SIZE_BYTES",
+                      "zh":  "NULLCLAW_GATEWAY_MAX_BODY_SIZE_BYTES"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "60",
+        "attrname":  "NULLCLAW_GATEWAY_REQUEST_TIMEOUT_SECS",
+        "label":  {
+                      "en":  "NULLCLAW_GATEWAY_REQUEST_TIMEOUT_SECS",
+                      "zh":  "NULLCLAW_GATEWAY_REQUEST_TIMEOUT_SECS"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_LARK_ALLOW_FROM",
+        "label":  {
+                      "en":  "NULLCLAW_LARK_ALLOW_FROM",
+                      "zh":  "NULLCLAW_LARK_ALLOW_FROM"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_LARK_ENCRYPT_KEY",
+        "label":  {
+                      "en":  "NULLCLAW_LARK_ENCRYPT_KEY",
+                      "zh":  "NULLCLAW_LARK_ENCRYPT_KEY"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "webhook",
+        "attrname":  "NULLCLAW_LARK_RECEIVE_MODE",
+        "label":  {
+                      "en":  "NULLCLAW_LARK_RECEIVE_MODE",
+                      "zh":  "NULLCLAW_LARK_RECEIVE_MODE"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "false",
+        "attrname":  "NULLCLAW_LARK_USE_FEISHU",
+        "label":  {
+                      "en":  "NULLCLAW_LARK_USE_FEISHU",
+                      "zh":  "NULLCLAW_LARK_USE_FEISHU"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_LARK_VERIFICATION_TOKEN",
+        "label":  {
+                      "en":  "NULLCLAW_LARK_VERIFICATION_TOKEN",
+                      "zh":  "NULLCLAW_LARK_VERIFICATION_TOKEN"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_LINE_ALLOW_FROM",
+        "label":  {
+                      "en":  "NULLCLAW_LINE_ALLOW_FROM",
+                      "zh":  "NULLCLAW_LINE_ALLOW_FROM"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "true",
+        "attrname":  "NULLCLAW_MEMORY_AUTO_SAVE",
+        "label":  {
+                      "en":  "NULLCLAW_MEMORY_AUTO_SAVE",
+                      "zh":  "NULLCLAW_MEMORY_AUTO_SAVE"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "markdown",
+        "attrname":  "NULLCLAW_MEMORY_BACKEND",
+        "label":  {
+                      "en":  "NULLCLAW_MEMORY_BACKEND",
+                      "zh":  "NULLCLAW_MEMORY_BACKEND"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "markdown_only",
+        "attrname":  "NULLCLAW_MEMORY_PROFILE",
+        "label":  {
+                      "en":  "NULLCLAW_MEMORY_PROFILE",
+                      "zh":  "NULLCLAW_MEMORY_PROFILE"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_QQ_ALLOW_FROM",
+        "label":  {
+                      "en":  "NULLCLAW_QQ_ALLOW_FROM",
+                      "zh":  "NULLCLAW_QQ_ALLOW_FROM"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_QQ_ALLOWED_GROUPS",
+        "label":  {
+                      "en":  "NULLCLAW_QQ_ALLOWED_GROUPS",
+                      "zh":  "NULLCLAW_QQ_ALLOWED_GROUPS"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_QQ_APP_ID",
+        "label":  {
+                      "en":  "NULLCLAW_QQ_APP_ID",
+                      "zh":  "NULLCLAW_QQ_APP_ID"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_QQ_APP_SECRET",
+        "label":  {
+                      "en":  "NULLCLAW_QQ_APP_SECRET",
+                      "zh":  "NULLCLAW_QQ_APP_SECRET"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "allow",
+        "attrname":  "NULLCLAW_QQ_GROUP_POLICY",
+        "label":  {
+                      "en":  "NULLCLAW_QQ_GROUP_POLICY",
+                      "zh":  "NULLCLAW_QQ_GROUP_POLICY"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "webhook",
+        "attrname":  "NULLCLAW_QQ_RECEIVE_MODE",
+        "label":  {
+                      "en":  "NULLCLAW_QQ_RECEIVE_MODE",
+                      "zh":  "NULLCLAW_QQ_RECEIVE_MODE"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "false",
+        "attrname":  "NULLCLAW_QQ_SANDBOX",
+        "label":  {
+                      "en":  "NULLCLAW_QQ_SANDBOX",
+                      "zh":  "NULLCLAW_QQ_SANDBOX"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "auto",
+        "attrname":  "NULLCLAW_SEARCH_PROVIDER",
+        "label":  {
+                      "en":  "NULLCLAW_SEARCH_PROVIDER",
+                      "zh":  "NULLCLAW_SEARCH_PROVIDER"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_SLACK_ALLOW_FROM",
+        "label":  {
+                      "en":  "NULLCLAW_SLACK_ALLOW_FROM",
+                      "zh":  "NULLCLAW_SLACK_ALLOW_FROM"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_SLACK_APP_TOKEN",
+        "label":  {
+                      "en":  "NULLCLAW_SLACK_APP_TOKEN",
+                      "zh":  "NULLCLAW_SLACK_APP_TOKEN"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_SLACK_CHANNEL_ID",
+        "label":  {
+                      "en":  "NULLCLAW_SLACK_CHANNEL_ID",
+                      "zh":  "NULLCLAW_SLACK_CHANNEL_ID"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "pairing",
+        "attrname":  "NULLCLAW_SLACK_DM_POLICY",
+        "label":  {
+                      "en":  "NULLCLAW_SLACK_DM_POLICY",
+                      "zh":  "NULLCLAW_SLACK_DM_POLICY"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "mention_only",
+        "attrname":  "NULLCLAW_SLACK_GROUP_POLICY",
+        "label":  {
+                      "en":  "NULLCLAW_SLACK_GROUP_POLICY",
+                      "zh":  "NULLCLAW_SLACK_GROUP_POLICY"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "http",
+        "attrname":  "NULLCLAW_SLACK_MODE",
+        "label":  {
+                      "en":  "NULLCLAW_SLACK_MODE",
+                      "zh":  "NULLCLAW_SLACK_MODE"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "/slack/events",
+        "attrname":  "NULLCLAW_SLACK_WEBHOOK_PATH",
+        "label":  {
+                      "en":  "NULLCLAW_SLACK_WEBHOOK_PATH",
+                      "zh":  "NULLCLAW_SLACK_WEBHOOK_PATH"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_TEAMS_BOT_ID",
+        "label":  {
+                      "en":  "NULLCLAW_TEAMS_BOT_ID",
+                      "zh":  "NULLCLAW_TEAMS_BOT_ID"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_TEAMS_NOTIFICATION_CHANNEL_ID",
+        "label":  {
+                      "en":  "NULLCLAW_TEAMS_NOTIFICATION_CHANNEL_ID",
+                      "zh":  "NULLCLAW_TEAMS_NOTIFICATION_CHANNEL_ID"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_TEAMS_TENANT_ID",
+        "label":  {
+                      "en":  "NULLCLAW_TEAMS_TENANT_ID",
+                      "zh":  "NULLCLAW_TEAMS_TENANT_ID"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_TEAMS_WEBHOOK_SECRET",
+        "label":  {
+                      "en":  "NULLCLAW_TEAMS_WEBHOOK_SECRET",
+                      "zh":  "NULLCLAW_TEAMS_WEBHOOK_SECRET"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "false",
+        "attrname":  "NULLCLAW_TELEGRAM_DRAFT_PREVIEWS",
+        "label":  {
+                      "en":  "NULLCLAW_TELEGRAM_DRAFT_PREVIEWS",
+                      "zh":  "NULLCLAW_TELEGRAM_DRAFT_PREVIEWS"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_TELEGRAM_GROUP_ALLOW_FROM",
+        "label":  {
+                      "en":  "NULLCLAW_TELEGRAM_GROUP_ALLOW_FROM",
+                      "zh":  "NULLCLAW_TELEGRAM_GROUP_ALLOW_FROM"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "allowlist",
+        "attrname":  "NULLCLAW_TELEGRAM_GROUP_POLICY",
+        "label":  {
+                      "en":  "NULLCLAW_TELEGRAM_GROUP_POLICY",
+                      "zh":  "NULLCLAW_TELEGRAM_GROUP_POLICY"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_TELEGRAM_PROXY",
+        "label":  {
+                      "en":  "NULLCLAW_TELEGRAM_PROXY",
+                      "zh":  "NULLCLAW_TELEGRAM_PROXY"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "false",
+        "attrname":  "NULLCLAW_TELEGRAM_REQUIRE_MENTION",
+        "label":  {
+                      "en":  "NULLCLAW_TELEGRAM_REQUIRE_MENTION",
+                      "zh":  "NULLCLAW_TELEGRAM_REQUIRE_MENTION"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "true",
+        "attrname":  "NULLCLAW_TELEGRAM_STREAMING",
+        "label":  {
+                      "en":  "NULLCLAW_TELEGRAM_STREAMING",
+                      "zh":  "NULLCLAW_TELEGRAM_STREAMING"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "*",
+        "attrname":  "NULLCLAW_WEB_ALLOWED_ORIGINS",
+        "label":  {
+                      "en":  "NULLCLAW_WEB_ALLOWED_ORIGINS",
+                      "zh":  "NULLCLAW_WEB_ALLOWED_ORIGINS"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "0.0.0.0",
+        "attrname":  "NULLCLAW_WEB_LISTEN",
+        "label":  {
+                      "en":  "NULLCLAW_WEB_LISTEN",
+                      "zh":  "NULLCLAW_WEB_LISTEN"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "token",
+        "attrname":  "NULLCLAW_WEB_MESSAGE_AUTH_MODE",
+        "label":  {
+                      "en":  "NULLCLAW_WEB_MESSAGE_AUTH_MODE",
+                      "zh":  "NULLCLAW_WEB_MESSAGE_AUTH_MODE"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "/ws",
+        "attrname":  "NULLCLAW_WEB_PATH",
+        "label":  {
+                      "en":  "NULLCLAW_WEB_PATH",
+                      "zh":  "NULLCLAW_WEB_PATH"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "32123",
+        "attrname":  "NULLCLAW_WEB_PORT",
+        "label":  {
+                      "en":  "NULLCLAW_WEB_PORT",
+                      "zh":  "NULLCLAW_WEB_PORT"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "default",
+        "attrname":  "NULLCLAW_WEB_RELAY_AGENT_ID",
+        "label":  {
+                      "en":  "NULLCLAW_WEB_RELAY_AGENT_ID",
+                      "zh":  "NULLCLAW_WEB_RELAY_AGENT_ID"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WEB_RELAY_TOKEN",
+        "label":  {
+                      "en":  "NULLCLAW_WEB_RELAY_TOKEN",
+                      "zh":  "NULLCLAW_WEB_RELAY_TOKEN"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WEB_RELAY_URL",
+        "label":  {
+                      "en":  "NULLCLAW_WEB_RELAY_URL",
+                      "zh":  "NULLCLAW_WEB_RELAY_URL"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "local",
+        "attrname":  "NULLCLAW_WEB_TRANSPORT",
+        "label":  {
+                      "en":  "NULLCLAW_WEB_TRANSPORT",
+                      "zh":  "NULLCLAW_WEB_TRANSPORT"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WECHAT_ALLOW_FROM",
+        "label":  {
+                      "en":  "NULLCLAW_WECHAT_ALLOW_FROM",
+                      "zh":  "NULLCLAW_WECHAT_ALLOW_FROM"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WECHAT_APP_ID",
+        "label":  {
+                      "en":  "NULLCLAW_WECHAT_APP_ID",
+                      "zh":  "NULLCLAW_WECHAT_APP_ID"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WECHAT_APP_SECRET",
+        "label":  {
+                      "en":  "NULLCLAW_WECHAT_APP_SECRET",
+                      "zh":  "NULLCLAW_WECHAT_APP_SECRET"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WECHAT_ENCODING_AES_KEY",
+        "label":  {
+                      "en":  "NULLCLAW_WECHAT_ENCODING_AES_KEY",
+                      "zh":  "NULLCLAW_WECHAT_ENCODING_AES_KEY"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WECOM_ALLOW_FROM",
+        "label":  {
+                      "en":  "NULLCLAW_WECOM_ALLOW_FROM",
+                      "zh":  "NULLCLAW_WECOM_ALLOW_FROM"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WECOM_CALLBACK_TOKEN",
+        "label":  {
+                      "en":  "NULLCLAW_WECOM_CALLBACK_TOKEN",
+                      "zh":  "NULLCLAW_WECOM_CALLBACK_TOKEN"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WECOM_CORP_ID",
+        "label":  {
+                      "en":  "NULLCLAW_WECOM_CORP_ID",
+                      "zh":  "NULLCLAW_WECOM_CORP_ID"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WECOM_ENCODING_AES_KEY",
+        "label":  {
+                      "en":  "NULLCLAW_WECOM_ENCODING_AES_KEY",
+                      "zh":  "NULLCLAW_WECOM_ENCODING_AES_KEY"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WHATSAPP_ALLOW_FROM",
+        "label":  {
+                      "en":  "NULLCLAW_WHATSAPP_ALLOW_FROM",
+                      "zh":  "NULLCLAW_WHATSAPP_ALLOW_FROM"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WHATSAPP_APP_SECRET",
+        "label":  {
+                      "en":  "NULLCLAW_WHATSAPP_APP_SECRET",
+                      "zh":  "NULLCLAW_WHATSAPP_APP_SECRET"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "password"
+    },
+    {
+        "default":  "",
+        "attrname":  "NULLCLAW_WHATSAPP_GROUP_ALLOW_FROM",
+        "label":  {
+                      "en":  "NULLCLAW_WHATSAPP_GROUP_ALLOW_FROM",
+                      "zh":  "NULLCLAW_WHATSAPP_GROUP_ALLOW_FROM"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "allowlist",
+        "attrname":  "NULLCLAW_WHATSAPP_GROUP_POLICY",
+        "label":  {
+                      "en":  "NULLCLAW_WHATSAPP_GROUP_POLICY",
+                      "zh":  "NULLCLAW_WHATSAPP_GROUP_POLICY"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "*",
+        "attrname":  "NULLCLAW_WHATSAPP_WEB_ALLOW_FROM",
+        "label":  {
+                      "en":  "NULLCLAW_WHATSAPP_WEB_ALLOW_FROM",
+                      "zh":  "NULLCLAW_WHATSAPP_WEB_ALLOW_FROM"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "nullclaw-plugin-whatsapp-web",
+        "attrname":  "NULLCLAW_WHATSAPP_WEB_COMMAND",
+        "label":  {
+                      "en":  "NULLCLAW_WHATSAPP_WEB_COMMAND",
+                      "zh":  "NULLCLAW_WHATSAPP_WEB_COMMAND"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    },
+    {
+        "default":  "10000",
+        "attrname":  "NULLCLAW_WHATSAPP_WEB_TIMEOUT_MS",
+        "label":  {
+                      "en":  "NULLCLAW_WHATSAPP_WEB_TIMEOUT_MS",
+                      "zh":  "NULLCLAW_WHATSAPP_WEB_TIMEOUT_MS"
+                  },
+        "required":  false,
+        "scope":  "environment",
+        "type":  "text"
+    }
+]
