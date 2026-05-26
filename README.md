@@ -1,4 +1,5 @@
 Nullclaw 爱快插件安装说明
+<img width="1912" height="948" alt="image" src="https://github.com/user-attachments/assets/90f445ed-37bd-4c18-85b3-88336f5cda64" />
 
 一、安装后先在应用配置中填写以下项目：
 - 模型提供商
